@@ -1,0 +1,31 @@
+@use 'base/variables' as v ;
+@use 'base/mixins' as  m;
+
+.sobre-festival{
+    padding: 5rem 0;
+    display: grid;
+    @include m.tablet{
+        @include m.grid(2,5rem); //Agregaria  la cantidad de columnas que quiero
+        
+    }
+    
+}
+
+
+
+.contenido-festival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include m.tablet{
+        margin-top: 5rem;
+        
+    }
+
+    h2{
+        margin-bottom: 2rem;
+    }
+    .fecha{
+        color: v.$rosa;
+    }
+}
